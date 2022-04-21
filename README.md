@@ -11,9 +11,8 @@ To use this package, add `google_huawei_availability` as a dependency in your `p
 
 import 'package:google_huawei_availability/google_huawei_availability.dart';
 
-bool isGoogle =
-        await GoogleHuaweiAvailability.isGoogleServiceAvailable ?? false;
-bool isHuawei =
-        await GoogleHuaweiAvailability.isHuaweiServiceAvailable ?? false;
+bool isGoogle = await GoogleHuaweiAvailability.isGoogleServiceAvailable;
+
+bool isHuawei = await GoogleHuaweiAvailability.isHuaweiServiceAvailable;
 
 ```
