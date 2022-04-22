@@ -24,10 +24,13 @@ class _MyAppState extends State<MyApp> {
     checkService();
   }
 
-  // Platform messages are asynchronous, so we initialize in an async method.
+  /// Sample call to check the services
   Future<void> checkService() async {
+    // Google Service
     bool isGoogle =
         await GoogleHuaweiAvailability.isGoogleServiceAvailable ?? false;
+
+    // Huawei Services
     bool isHuawei =
         await GoogleHuaweiAvailability.isHuaweiServiceAvailable ?? false;
 

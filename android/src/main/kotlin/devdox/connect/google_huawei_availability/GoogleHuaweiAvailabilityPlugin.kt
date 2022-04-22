@@ -25,6 +25,7 @@ class GoogleHuaweiAvailabilityPlugin: FlutterPlugin, MethodCallHandler, Activity
     context = flutterPluginBinding.applicationContext
   }
 
+ //Method Channel Call
   override fun onMethodCall(@NonNull call: MethodCall, @NonNull result: Result) {
     when (call.method) {
         "isGoogleServiceAvailable" -> isGoogleServiceAvailable(result)
@@ -33,6 +34,7 @@ class GoogleHuaweiAvailabilityPlugin: FlutterPlugin, MethodCallHandler, Activity
     }
   }
 
+  // Google Service
   private fun isGoogleServiceAvailable(@NonNull result: Result){
     try {
       val service: Int = GoogleApiAvailability.getInstance().isGooglePlayServicesAvailable(context)
@@ -42,6 +44,7 @@ class GoogleHuaweiAvailabilityPlugin: FlutterPlugin, MethodCallHandler, Activity
     }
   }
 
+ // Huawei Service
   private fun isHuaweiServiceAvailable(@NonNull result: Result){
     try{
       val service:Int = HuaweiApiAvailability.getInstance().isHuaweiMobileServicesAvailable(context)
