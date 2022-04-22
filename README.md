@@ -1,5 +1,6 @@
 # Google and Huawei Service Availability
- A Flutter plugin to detect the availability of the Google Play Services and Huawei HMS Services API on Android devices.
+ A Flutter plugin to detect the availability of the Google Play Services and Huawei HMS Services API on Android devices. 
+ It can also be used to check the device is a Huawei device or not.
 
 ### Installing
 
@@ -8,8 +9,6 @@ To use this package, add `google_huawei_availability` as a dependency in your `p
 ### Usage
 
 ```dart
-
-
 
 import 'package:google_huawei_availability/google_huawei_availability.dart';
 
