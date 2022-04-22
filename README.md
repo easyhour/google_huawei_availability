@@ -9,10 +9,14 @@ To use this package, add `google_huawei_availability` as a dependency in your `p
 
 ```dart
 
+
+
 import 'package:google_huawei_availability/google_huawei_availability.dart';
 
+TO CHECK DEVICE OTHER THAN HUAWEI
 bool isGoogle = await GoogleHuaweiAvailability.isGoogleServiceAvailable;
 
+TO CHECK IS HUAWEI DEVICE
 bool isHuawei = await GoogleHuaweiAvailability.isHuaweiServiceAvailable;
 
 ```
