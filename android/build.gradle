@@ -51,6 +51,6 @@ android {
 
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-    implementation 'com.google.android.gms:play-services-base:18.0.1'
-    implementation 'com.huawei.hms:base:5.2.0.300'
+    implementation 'com.google.android.gms:play-services-base:18.5.0'
+    implementation 'com.huawei.hms:base:6.11.0.302'
 }
